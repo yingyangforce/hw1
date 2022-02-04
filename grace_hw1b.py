@@ -6,18 +6,25 @@
 # Description: Weighted average calculator
 # Collabs: N/a
 
-#TODO: add weights and compute avg
+# Weights used for calculations - 
+# ---
+# HW       - 30%
+# Projects - 20%
+# Exams    - 35%
+# Labs     - 10%
+# Pro Dev  - 5%
 
-hw_avg = float(input("Enter your homework average: "))
 
-project_avg = float(input("Enter your project average: "))
+hw = float(input("Enter your homework average: "))
 
-lab_avg = float(input("Enter your lab average: "))
+projects = float(input("Enter your project average: "))
 
-prodev_avg = float(input("Enter your professional development average: "))
+labs = float(input("Enter your lab average: "))
 
-exam_avg = float(input("Enter your exam average: "))
+prodev = float(input("Enter your professional development average: "))
 
-weighted_avg
+exams = float(input("Enter your exam average: "))
 
-print(f"Your weighted average grade is: {}
+weighted_avg = (hw * .3) + (projects * .2) + (exams * .35) + (labs * .1) + (prodev * .05)
+
+print(f"Your weighted average grade is: {weighted_avg}")
